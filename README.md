@@ -48,7 +48,7 @@ php artisan test
 
 ### Books Endpoints
 ```GET /api/v1/books```
-You can filter using query string e.g. ?filter[title]=value. Available filters are title, author, client.first_name, client.last_name
+You can filter using query string e.g. ```?filter[title]=value```. Available filters are title, author, client.first_name, client.last_name
 
 ```GET /api/v1/books/{id}```
 
