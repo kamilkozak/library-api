@@ -27,7 +27,7 @@ class BookController extends Controller
             ])
             ->with('client');
 
-        return IndexBookResource::collection($books->paginate(20));
+        return IndexBookResource::collection($books->paginate(config('app.per_page')));
     }
 
     public function show(Book $book): ShowBookResource
