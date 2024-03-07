@@ -29,14 +29,14 @@ Now, you can create an SQLite database file. In your terminal type:
 touch database/database.sqlite
 ```
 
-Once the SQLite database file is created, run the migrations with seeders:
-```
-php artisan migrate --seed
-```
-
 To start the development server that allows local testing, use the following command:
 ```
 php artisan serve
+```
+
+Once the SQLite database file is created, run the migrations with seeders:
+```
+php artisan migrate:fresh --seed
 ```
 
 Testing:
